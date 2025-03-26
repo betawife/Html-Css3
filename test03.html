@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册信息</title>
+</head>
+<body>
+    <h1>注册信息</h1>
+    <form action="">
+        <!-- 表单 -->
+        <!-- 个人信息 -->
+        <h2>个人信息</h2>
+        <label for="name">姓名：</label><input type="text"  id="name" placeholder="请输入姓名"><br><br>
+        <label for="password">密码：</label><input type="password"  id="password" placeholder="请输入密码"><br><br>
+        <label>性别：</label>
+        <label><input type="radio" name="gender">男</label>
+        <label><input type="radio" name="gender">女</label>
+        <br><br>
+        <label>居住城市：</label>
+        <select>
+            <option selected>北京</option>
+            <option>上海</option>
+            <option>广州</option>
+            <option>深圳</option>
+            <option>杭州</option>
+        </select><br><br>
+        <!-- 教育经历 -->
+        <h2>教育经历</h2>
+        <label>最高学历：</label>
+        <select>
+            <option selected>本科</option>
+            <option>硕士</option>
+            <option>博士</option>
+        </select><br><br>
+        <label>毕业院校：</label><input type="text" placeholder="请输入毕业院校"><br><br>
+        <label>所学专业：</label><input type="text" placeholder="请输入所学专业"><br><br>
+        <label>结业时间：</label><input type="date"><br><br>
+        <!-- 工作经历 -->
+        <h2>工作经历</h2>
+        <label>工作单位：</label><input type="text" placeholder="请输入工作单位"><br><br>
+        <label>职位描述：</label><textarea>在这写入，不超过300字</textarea><br><br>
+        <!-- 协议部分 -->
+        <label><input type="checkbox">我已阅读并同意
+            <ul>
+                <li><a href="#">《用户协议》</a></li>
+                <li><a href="#">《隐私政策》</a></li>
+            </ul>
+        </label><br><br>
+        <!-- 提交按钮 -->
+        <input type="submit" value="提交">
+        <button type="reset">重置</button>
+    </form>
+
+</body>
+</html>
