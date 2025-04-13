@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            height: 500px;
+            background-color: #f3f3f4;
+            background-image: url(./images/true.png); 
+            background-repeat: no-repeat ;
+            background-position: left center;
+
+            text-align: right;  /*文字属性，可被h2,p等子级继承*/
+            color: #333;
+        }
+        .banner h2 {            /* 后代选择器h2,实现部分标签选择器的特化*/
+            font-size: 36px;
+            font-weight: 400;
+            line-height: 100px;
+        }
+        .banner p {             /* 后代选择器p*/
+            font-size: 20px;
+            font-weight: 400;
+        }
+        .banner a {             /* 后代选择器a*/
+            display: inline-block; /* 让链接变成行内块级元素，方便设置宽高，背景色及位置*/
+            width: 125px;
+            height: 40px;
+            background-color: #f06b1f;
+
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            line-height: 40px; /* 让文字垂直居中*/
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h2>这是两只鸠子</h2>
+        <p>咕咕咕，谷谷股，固固古，鼓咕咕</p>
+        <a href="#">点击投喂</a>
+    </div>
+</body>
+</html>
