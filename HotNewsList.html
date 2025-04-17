@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotNews</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+
+        .news{   /*新闻box*/
+            width: 360px;
+            height: 200px;
+            background-color: #fff;
+            margin: 20px auto;
+        }
+        .news .head{ /*新闻标题box*/
+          height: 34px;
+          background-color: #eee;  
+          border: 1px solid #dbdee1;
+          border-left: none;
+        }
+
+        .news .head  a{ /*新闻标题链接box*/
+            width: 48px;
+            height: 34px;
+            background-color: #fff;
+            border-top: 3px solid #ff8400;
+            margin-top: -1px 0 0 0;/*外边距负值代表box位移*/
+            display: block;
+
+            text-align: center;
+            line-height: 32px;
+            font-size: 14px;
+            color: #333;
+
+        } 
+
+        .news .body{ /*新闻主体box*/
+            padding:5px;
+        }
+        .news .body li{ /*新闻li装饰背景*/
+            padding-left: 15px; 
+            background-image: url("./images/decoration_point.img.png");
+            background-repeat: no-repeat;
+            background-position: 0 center;
+        }
+        .news .body li a{ /*新闻li链接*/
+            background-image: url("#");   /*新闻快照url*/
+            background-repeat: no-repeat;
+            background-position: 0 center; 
+           
+            padding-left: 20px; /*文字间距*/
+            font-size: 12px;
+            color: #666;
+            line-height: 24px;
+        }
+        .news .body li a:hover{ /*新闻li链接hover*/
+            color: #ff8400;
+        }
+    </style>
+</head>
+<body>
+    <div class="news">
+        <div class="head">
+            <a href="#">新闻</a>
+        </div>
+        <div class="body">
+            <ul>
+                <li><a href="#">新闻标题1</a></li>
+                <li><a href="#">新闻标题2</a></li>
+                <li><a href="#">新闻标题3</a></li>
+                <li><a href="#">新闻标题4</a></li>
+                <li><a href="#">新闻标题5</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
