@@ -1,0 +1,116 @@
+/* 首页Css属性*/
+/* 版心 */
+.wrapper {
+    margin:0 auto;
+    width:1200px;
+}
+
+body {
+    background-color: #f3f5f7;
+    font-family: "微软雅黑", "Microsoft YaHei", "黑体", "Arial", sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+/* 头部Css属性*/
+.header {
+    height: 100px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+.header .wrapper {
+    padding-top: 29px;
+    display: flex;
+   
+}
+/* logo */
+.header .logo a{
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url("#");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    font-size: 0;   /*隐藏文字*/
+    text-indent: -9999px; /*隐藏文字*/
+    text-decoration: none;
+}
+/* 导航条 */
+.header .nav {
+    margin-left: 102px;
+}
+.header .nav ul {
+    display: flex;
+}   
+.header .nav li {
+    list-style: none;
+    margin-right: 24px;
+}
+.header .nav li a {
+    padding: 6px 8px;
+    line-height: 27px;
+    text-decoration: none;
+    color: #333;
+    font-size: 19px;
+   
+    display: block;
+}
+.header .nav li a:active,.header .nav li a:hover {
+    border-bottom: 2px solid skyblue;
+}
+/* 搜索框 */
+.header .search {
+    display: flex;
+    margin-left: 64px;
+    padding-left: 19px;
+    padding-right: 12px;
+    width: 412px;
+    height: 40px;
+
+    background-color: #f3f5f7;
+    border-radius: 20px;
+}
+.header .search input {
+    flex:1; /*占满剩余空间*/
+    border:0;
+    outline: none; /*去掉选中输入框时的边框和阴影*/
+    background-color: #f3f5f7;
+    font-size: 14px;
+    color: #333;
+}
+.header .search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+.header .search a {  /*父级已经该位flex布局，子级作为弹性盒子，宽高生效*/
+    align-self: center;
+    width: 16px;
+    height: 16px;
+    background-image: url("#");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border:0;
+    
+    cursor: pointer; /*鼠标悬停时变成手型*/
+}
+/* 用户 */
+.header .user {
+    margin-left: 32px;
+    margin-top: 6px; 
+    width: 100px;
+    display: flex;
+}
+.header .user span {
+    font-size: 16px;
+    color: #666;
+}
+.header .user img {
+    vertical-align: middle; /*图片垂直居中*/
+    margin-right: 7px;
+}
+.header .user a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
