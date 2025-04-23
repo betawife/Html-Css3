@@ -12,7 +12,7 @@ body {
     color: #333;
 }
 
-/* 头部Css属性*/
+/* 1.头部Css属性*/
 .header {
     height: 100px;
     background-color: #fff;
@@ -113,4 +113,102 @@ body {
     text-decoration: none;
     color: #666;
     font-size: 16px;
+}
+
+/* 2.轮播条Css属性*/
+.banner {
+    margin-top: 20px;
+    width: 1920px;
+    height: 420px;
+    background-color: #0092cb;
+    background-image: url("#");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;   /*主轴对齐between，可实现左、右侧边栏*/
+    height: 420px;
+
+    background-image: url("#");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.banner .left {
+    width: 191px;
+    height: 420px;
+    padding: 3px 20px;
+
+    background-color:rgba(0, 0, 0 , 0.42); /*半透明黑色背景*/
+}
+.banner .left a {
+    display: block; /*块级,宽度为父级100%*/
+    height: 46px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 46px; 
+    text-align: left;
+
+    background-image: url("#") right center no-repeat; /*箭头背景图在右侧居中*/
+}
+.banner .left a:hover {
+    color:#00a4ff
+}
+
+.banner .right {
+    margin-top: 60px;
+    width: 218px;
+    height: 305px;
+    
+    border-radius: 10px;
+    background-color:#209dd5;
+}
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+.banner .right .content {
+    padding: 14px;
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.content dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.content dt {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    font-weight: 700;
+}
+.content dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.content dd span {
+    color:#00a4ff
+}
+.content dd strong {
+    color: #7d7d7d;
+    font-weight: 400;
+}
+.banner .right  a {
+    display: block;
+    height: 32px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 32px; 
+    text-align: center;
+    background-color: #00a4ff;
 }
