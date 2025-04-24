@@ -2,7 +2,7 @@
 
 /* 版心,提供基本box */
 .wrapper {
-    margin:0 auto;
+    margin:0 auto; /*水平居中*/
     width:1200px;
 }
 
@@ -250,4 +250,69 @@ body {
     font-size:16px;
     color:#00a4ff;
     text-decoration: none;
+}
+/* 4.推荐课程 */
+.course{
+    margin-top: 15px;
+}
+.hd{
+    display: flex;
+    justify-content:space-between;
+    margin:0 auto;
+    width: 1200px;
+    height: 60px;
+    line-height: 60px;
+}
+.hd h3 {
+    font-size: 21px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+.hd .more{
+    padding-right:20px;
+    background-image: url("#") right center no-repeat; /*箭头背景图在右侧居中*/
+    background-size: 100%;
+    font-size: 14px;
+    color: #999;
+}
+/* 课程内容(公共) */
+.bd ul{
+    display: flex;
+    flex-wrap: wrap; /*换行*/
+    justify-content: space-between; 
+    list-style: none;
+}
+.bd li{
+    width: 228px;
+    height: 271px;
+    margin-bottom: 14px;
+}
+.bd li .pic{
+    height:156px;
+}
+.bd li .text{
+    padding: 20px;
+    height: 115px;
+}
+.bd li .text h4{
+    margin-bottom: 13px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.bd li .text p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #999;
+}
+.bd li .text p span{
+    color: orange;
+}
+.bd li a {
+    text-decoration: none; /* 去除链接下划线 */
+    color: inherit; /* 继承父元素颜色 */
+}
+.bd li .text p i{
+    font-style: normal; /*去掉斜体*/
 }
