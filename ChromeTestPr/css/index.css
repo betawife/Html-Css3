@@ -1,5 +1,6 @@
 /* 首页Css属性*/
-/* 版心 */
+
+/* 版心,提供基本box */
 .wrapper {
     margin:0 auto;
     width:1200px;
@@ -211,4 +212,42 @@ body {
     line-height: 32px; 
     text-align: center;
     background-color: #00a4ff;
+}
+
+/* 3.精品推荐recommend*/
+.recommend{
+    display: flex;
+    padding: 0 20px;
+    width: 1200px;
+    height:60px;
+    margin: 11px auto;
+
+    background-color: #fff;
+    box-shadow: 0px 1px 2px 0px rgba(211, 211, 211, 0.5);
+    line-height: 60px;
+}
+.recommend h3 {
+    font-size: 18px;
+    color: #00a4ff;
+    font-weight: 400;
+}
+.recommend ul {
+    display: flex;
+    flex:1; /*列表占满剩余空间*/
+    list-style: none;
+}
+.recommend ul li a{
+    padding:0 24px;
+    border-right: 1px solid #e0e0e0;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+.recommend ul li:last-child a {
+    border-right: none;
+}
+.recommend .modify{
+    font-size:16px;
+    color:#00a4ff;
+    text-decoration: none;
 }
