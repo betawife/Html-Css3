@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        .service{             
+            width: 1190px;
+            height: 82px;
+            margin: 100px auto;
+        }
+        .service ul{
+            display: flex;
+        }
+        .service ul li{
+            display: flex;
+            padding-left: 40px;
+            width: 297px;
+            height: 82px;
+        }
+        .service ul li h5{     /*1.设置box宽高，加入整合背景图*/
+            margin-right: 10px;
+            width: 70px;
+            height: 82px;
+           background: url("./images/7f8686ee76e42123.png") 0 0 ;
+        }
+        .service ul li:nth-child(2) h5{
+            background: url("./images/7f8686ee76e42123.png") -76px 0;  /* 调整整合图位置*/
+        }
+        .service ul li:nth-child(3) h5{
+            background: url("./images/7f8686ee76e42123.png") -152px 0;
+        }
+        .service ul li:nth-child(4) h5{
+            background: url("./images/7f8686ee76e42123.png") 0 -91px;
+        }
+    </style>
+</head>
+<body>
+    <div class="service">
+        <ul>
+            <li>
+                <h5></h5>
+                <p>品类齐全，轻松购物</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>多仓直发，极速配送</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>正品行货，精致服务</p>
+            </li>
+            <li>
+                <h5></h5>
+                <p>天天低价，畅选无忧</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
