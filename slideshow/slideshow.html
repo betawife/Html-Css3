@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideshow</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        .banner {
+            position: relative;/*相对定位*/
+            margin: 100px auto;
+            width: 564px;
+            height: 315px;
+            overflow: hidden;  /*隐藏轮播图*/
+        }
+        .banner ul {
+            display: flex;
+        }
+        .banner img {
+            width: 564px;
+            border-radius: 12px;
+            vertical-align: middle;
+        }
+        .banner  .prev,.banner  .next {
+            display: none; /*默认隐藏*/
+            position: absolute; /*绝对定位*/
+            top: 50%;                    /*图片左上角垂直居中*/
+            transform: translateY(-50%); /*图片由左上居中到整体居中*/
+            width: 20px;
+            height: 30px;
+            background-color: rgba(0,0,0,0.3);
+            color: #fff;
+            line-height: 30px;
+        }
+        .banner:hover .prev,.banner:hover .next {
+            display: block; /*鼠标悬停时显示*/
+        }
+        .banner .prev{
+            left: 0;
+            border-radius: 0 50% 50% 0;
+        }
+        .banner .next{
+            right: 0;
+            border-radius: 50% 0 0 50%;
+            text-align: center;
+        }
+        .banner ol {
+            display: flex;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%); /*整体水平居中*/
+            height: 13px;
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 3px;
+        }
+        .banner ol li {
+            
+            width: 8px;
+            height: 8px;
+            margin: 3px;
+            background-color: #fff;
+            border-radius: 50%;
+            opacity: 0.8; /*透明度*/
+            cursor: pointer; /*鼠标悬停时变成手型*/
+        }
+        .banner ol .active {
+           background-color: #f55;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+       <!-- 轮播图图片 -->
+        <ul>
+            <li><a href="#"><img src="../images/20230308085904_eaf99.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../images/20230308085904_2b1c0.jpg" alt=""></a></li>
+            <li><a href="#"><img src="../images/20230308085904_3f1b2.jpg" alt=""></a></li>
+        </ul>
+        <!-- 轮播图箭头 -->
+        <a href="#" class="prev"><i class="iconfont icon-next"></i></a>
+        <a href="#" class="next"><i class="iconfont icon-previous"></i></a>
+        <!-- 轮播图圆点 -->
+         <ol>
+            <li></li>
+            <li class="active"></li>
+            <li></li>
+         </ol>
+    </div>
+</body>
+</html>
