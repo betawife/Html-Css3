@@ -3,7 +3,7 @@
 /*版心*/
 .wrapper{
 
-    width: 1240px;
+    width: 1240px ; /*宽度1240px*/
     margin: 0 auto;
     background: #fff;
 }
@@ -39,4 +39,104 @@
 }
 .shortcut li .login{
     color: #5EB69C;
+}
+/*头部*/
+.header{
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    height: 88px;
+    background-color: peru;
+}
+/*头部logo*/
+.header .logo{
+    margin-right: 40px;
+    width: 200px;
+    height: 88px;
+    background-color: skyblue;
+}
+.logo a{
+    display: block;
+    width: 200px;
+    height: 88px;
+    background-image: url(../images/20230308085904_eaf99.jpg);
+    font-size: 0; /*-隐藏文字*/
+}
+/*头部导航*/
+.nav{
+    margin-top: 33px;
+    margin-right: 28px;
+}
+.nav ul{
+    display: flex;
+}
+.nav ul li{
+    margin-right: 47px;
+}
+.nav ul li a{
+    padding-bottom: 10px;
+}
+.nav ul li a:hover{
+    border-bottom: 2px solid #5EB69C;
+    color: #5EB69C;
+}
+/*头部搜索框*/
+.search{
+    display: flex;
+    margin-top: 33px;
+    margin-right: 45px;
+    width: 170px;
+    height: 34px;
+    border-radius: 5px;
+    border-bottom: 2px solid #F4F4F4;
+}
+.search input{
+    /*搜索框宽度自适应flex:1;清除..默认宽度width：0*/
+    flex:1;
+    width: 0;
+}
+.search input::placeholder{
+    color: #CCC;
+    font-size: 16px;
+}
+.search .iconfont{
+    margin-right: 8px;
+    font-size: 18px;
+    color: #CCC;
+}
+/*头部购物车*/
+.cart{
+    position: relative;
+    margin-top: 32px;
+}
+.cart .iconfont{
+    font-size: 24px;
+    color: #333;
+}
+.cart i{
+    position: absolute;
+    top: 1px;
+    /*right: -4px; 一般不使用右端边偏移，内容撑开方向为向左*/
+    left: 15px;
+    padding: 0 6px;
+    height: 15px;
+    background-color: #E26237;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #FFFEFE;
+    line-height: 15px;
+}
+
+/*底部*/
+.footer{
+    height: 580px;
+    background-color: #F5F5F5;
+}
+.footer .service{
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;
+}
+.footer .help{
+    height: 300px;
+    background-color: pink;
 }
