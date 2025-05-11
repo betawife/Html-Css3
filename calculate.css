@@ -1,0 +1,19 @@
+.box {
+  width: 1.81333333rem;
+}
+
+.father {
+  width: 100px;
+}
+.father .son {
+  width: 50px;
+}
+.father .son .grandson {
+  width: 10px;
+}
+.father a {
+  width: 20px;
+}
+.father a:hover {
+  width: 30px;
+}

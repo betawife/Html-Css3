@@ -1,0 +1,20 @@
+.box{
+    width:(68/37.5rem);
+}
+
+// less嵌套
+.father{
+    width: 100px;
+    .son{
+        width: 50px;
+        .grandson{
+            width: 10px;
+        }
+    }
+    a{
+        width: 20px;
+        &:hover{
+            width: 30px;
+        }
+    }
+}
